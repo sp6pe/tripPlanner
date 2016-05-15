@@ -14,5 +14,5 @@ This app calculates the distance and plots the route between two user inputted a
 
 ## Testing
 1. Make sure the app is not running
-2. In base, go to the primary diredtory of the app
+2. In bash, go to the primary directory of the app
 3. Run the tests with `npm test`
