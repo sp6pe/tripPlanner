@@ -1,0 +1,32 @@
+{
+  "name": "tripplanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -e html,css,js server/app/app.js",
+    "test": "mocha ./tests/test.js"
+  },
+  "author": "gabriel@fullstackacademy.com",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-animate": "^1.5.5",
+    "bluebird": "^2.9.34",
+    "body-parser": "^1.13.3",
+    "bootstrap": "3.3.5",
+    "chai": "^3.5.0",
+    "express": "^4.13.3",
+    "jquery": "^2.1.4",
+    "mocha": "^2.4.5",
+    "mocha-mongoose": "^1.2.0",
+    "mongodb": "^2.1.17",
+    "mongoose": "^4.1.2",
+    "morgan": "^1.6.1",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.4.1",
+    "supertest": "^1.2.0"
+  }
+}

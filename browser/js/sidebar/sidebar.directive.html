@@ -1,0 +1,53 @@
+  <!--  right sidebar -->
+        <div id="control-panel" class="col-sm-5 col-lg-4 clearfix">
+
+          <!--  airport submission form -->
+            <div class="col-xs-6 col-sm-12">
+              <form name = "airportSubmitForm">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div>
+                            <h4>Enter Airport 1</h4>
+
+                         <input type="text" class="form-control" required ng-model="selectedAirportOne" bs-options="airport.displayName for airport in airports" placeholder="Enter Airport" bs-typeahead>
+                        </div>
+                        <div>
+                            <h4>Enter Airport 2</h4>
+
+                                <input type="text" class="form-control" required ng-model="selectedAirportTwo" bs-options="airport.displayName for airport in airports" placeholder="Enter Airport" bs-typeahead>
+                        </div>
+                        <div>
+                            <h3>
+                              <span id="day-title">
+                                   <button type="submit" class="btn btn-warning" ng-disabled="airportSubmitForm.$invalid"  type="submit" ng-click = "submittedAirports(selectedAirportOne,selectedAirportTwo)"> Submit </button>
+
+                              </span>
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+              </form>
+            </div>
+             <!--  end airport submission form -->
+
+            <!--  airport distance and time display-->
+            <div class="col-xs-6 col-sm-12">
+
+                <div class="panel panel-default" ng-show = showtrip>
+                    <div class="panel-heading">
+                           <h2> Trip Info</h2>
+                    </div>
+                    <div class="panel-body" id="itinerary">
+                        <div>
+                            <h4>The airports are {{response.routes[0].legs[0].distance.text}}les apart, and the trip will take {{response.routes[0].legs[0].duration.text}}</h4>
+                            <ul class="list-group" id="hotelList">  
+                            </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end airport distance and time display-->
+
+        </div>
+        <!-- end right sidebar -->

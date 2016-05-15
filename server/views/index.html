@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>Jai's Airport Distance App</title>
+
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-animate/angular-animate.js"></script>
+    <script src="/angular-strap/dist/angular-strap.min.js"></script>
+    <script src="/angular-strap/dist/angular-strap.tpl.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXljyR1N-Con2tOhwvJ0XPgdgdL7BKxO8"></script>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/airport.controller.js"></script>
+    <script src="/js/sidebar/sidebar.directive.js"></script>
+</head>
+
+<body ng-app="airportDistance" ng-controller="airportCtrl">
+    <!--  nav bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand page-scroll" href="#page-top" id="maintitle">Airport Distance Calculator</a>
+            </div>
+        </div>
+    </nav>
+    <!--  end nav bar -->
+    
+    <!--main view -->
+    <div id="app" class="clearfix">
+        <!--  map display -->
+        <div class="map-container col-sm-7 col-lg-8">
+            <div>
+                <div id="map-canvas"></div>
+            </div>
+        </div>
+        <!--  end map display -->
+        
+        <sidebar> </sidebar>
+        
+    </div>
+    <!--end main view -->
+</body>
+
+</html>
